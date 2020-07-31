@@ -3,7 +3,7 @@ const button = document.querySelector(".btn");
 const regex = /^[0-9]+$/;
 let result = document.querySelector("result");
 
-button.addEventListener("click", function () {
+button.addEventListener("click", function (event) {
   event.preventDefault();
   let user_input = document.querySelector("#cardNumber").value; //document.cardForm.cardNumber.value
   // check if input is number + prevent empty string in input.
