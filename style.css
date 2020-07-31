@@ -1,0 +1,113 @@
+/* Colours 
+:root {
+--pri-color: #102c54;
+--sec-color: #a980a2
+*/
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: url("img/mountain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#main {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* align-content: center; */
+  align-self: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 24px;
+  box-shadow: 0 50px 100px -20px rgba(50, 50, 93, 0.25),
+    0 30px 60px -30px rgba(0, 0, 0, 0.3),
+    inset 0 -2px 6px 0 rgba(10, 37, 64, 0.35);
+}
+
+/* form style */
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+#form > h1 {
+  color: grey;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+
+#form > input {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#result {
+  color: #a980a2;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0.5rem 0.5rem;
+  margin: 0;
+}
+
+/* button style */
+.row {
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+.btn {
+  font-size: 0.75rem;
+  border: 0.175em solid white;
+  width: 100%;
+  height: 40px;
+  letter-spacing: 0.25em;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: #102c54;
+  /* box-shadow: 0 2px 4px -1px rgba(50,50,93,.25),0 1px 3px -1px rgba(0,0,0,.3); */
+  text-align: center;
+  align-self: center;
+  transition: letter-spacing 0.3s linear 0.1s;
+}
+
+.btn:hover {
+  background-color: #a980a2;
+  color: whitesmoke;
+  font-weight: bolder;
+  letter-spacing: 0.4em;
+}
+
+.clear {
+  background-color: #fdd8c0;
+  color: #102c54;
+}
+
+.clear:hover {
+  background-color: #91b6c2;
+}
+
+/* footer style*/
+footer {
+  color: whitesmoke;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: fixed;
+  bottom: 0;
+}
