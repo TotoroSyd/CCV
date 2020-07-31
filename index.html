@@ -1,9 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+    <!-- <link rel="icon" type="image/png" href="image/logo-orangebg.svg" /> -->
+    <title>Card Verificator</title>
   </head>
-  <body></body>
+  <body>
+    <section id="main">
+      <form name="cardForm" id="form">
+        <h1>Enter your card number</h1>
+        <input
+          type="text"
+          inputmode="decimal"
+          id="cardNumber"
+          name="cardNumber"
+          placeholder="3773******"
+          maxlength="19"
+        />
+        <div class="row">
+          <button class="btn col" type="submit">CHECK</button>
+          <button class="btn clear col" type="reset">CLEAR</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </section>
+
+    <script src="/script.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <p>Created by Phoebe Nguyen</p>
+    <!-- <span>Photo by <a href="https://unsplash.com/@snapsbyclark?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clark Van Der Beken</a> on <a href="https://unsplash.com/s/photos/gradient-background?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+    <!-- <span>Photo by <a href="https://unsplash.com/@z734923105?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jerry Zhang</a> on <a href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> -->
+  </footer>
 </html>
