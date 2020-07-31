@@ -1,7 +1,7 @@
 // capture input from user
 const button = document.querySelector(".btn");
 const regex = /^[0-9]+$/;
-let result = document.getElementById("result");
+let result = document.querySelector("result");
 
 button.addEventListener("click", function () {
   event.preventDefault();
