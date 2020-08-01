@@ -16,6 +16,7 @@ button.addEventListener("click", function (event) {
     result.innerHTML = output;
   }
 });
+a;
 
 function cardCheck(user_input) {
   const l = user_input.length;
