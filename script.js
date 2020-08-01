@@ -1,11 +1,13 @@
 // capture input from user
 const button = document.querySelector(".btn");
 const regex = /^[0-9]+$/;
-let result = document.querySelector("#result");
+const result = document.querySelector("#result");
+const input = document.querySelector("#cardNumber");
 
+// Check button
 button.addEventListener("click", function (event) {
   event.preventDefault();
-  let user_input = document.querySelector("#cardNumber").value; //document.cardForm.cardNumber.value
+  let user_input = input.value; //document.cardForm.cardNumber.value
   // check if input is number + prevent empty string in input.
   if (!user_input.match(regex)) {
     console.warn("Wrong input type");
@@ -16,7 +18,14 @@ button.addEventListener("click", function (event) {
     result.innerHTML = output;
   }
 });
-a;
+
+// Clear button
+const clear_button = document.querySelector(".clear");
+clear_button.addEventListener("click", function (event) {
+  event.preventDefault();
+  result.innerHTML = "";
+  input.value = "";
+});
 
 function cardCheck(user_input) {
   const l = user_input.length;
